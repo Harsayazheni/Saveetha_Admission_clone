@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+}
+body, html {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.bg-img {
+  background-image: url("bg.jpg");
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.form-box {
+  position: absolute;
+  right: 0;
+
+  max-width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+}
+select
+{
+    width: 49%;
+    padding: 10px;
+    border-radius: 5px;
+}
+label{
+    color: white;
+    font-size: 13px;
+
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.checkbox {
+  width: auto;
+  margin: 0;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #e28743;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
