@@ -1,5 +1,5 @@
 # Saveetha_Admission_clone
-## Date:
+## Date:9/7/2025
 
 ## Objective:
 To design a landing page clone of Saveetha Engineering College’s Admission Enquiry form using HTML and CSS. This activity reinforces skills in layout design, form creation, user input handling, responsive structure, and visual styling based on a real-world example.
@@ -38,10 +38,160 @@ Make sure the page adapts to different screen sizes using media queries.
 Maintain readability and layout integrity on both desktop and mobile.
 
 ## HTML Code:
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saveetha Engineering College</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
 
+        <div class="bg-img">
+        <form class="form-box">
+                <h2>Admissions Open 2025</h2>
+                <br>
+                <input type="text" placeholder="Enter Name *" required>
+                <br> <br>
+                <input type="email" placeholder="Enter Email Address *" required>
+                <br><br>
+                <input type="tel" placeholder="Enter Mobile Number *" required>
+                <br><br>
+                <input type="password" placeholder="Any Password of Your Choice *" required>
+                <br><br>
+                
+                <select required>
+                    <option value="" disabled selected>State *</option>
+                    <option>Tamil Nadu</option>
+                    <option>Karnataka</option>
+                    <option >Kerala</option>
+                    <option>Andhra Pradesh</option>
+                </select>
+                <select required>
+                    <option value="" disabled selected>City *</option>
+                    <option>Chennai</option>
+                    <option>Coimbatore</option>
+                </select>
+                
+                <br><br>
+                
+                <select required>
+                    <option value="" disabled selected>Course *</option>
+                    <option>CSE</option>
+                    <option>AIDS</option>
+                    <option>AIML</option>
+                    <option>ECE</option>
+                </select>
+                <select required>
+                    <option value="" disabled selected>Specialization *</option>
+                    <option>VLSI</option>
+                    <option>Cyber Security</option>
+                    <option>IOT</option>
+                </select>
+                <br><br>
+                <div class="right-side">
+                <input class="checkbox" type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    I authorise Saveetha Engineering College & its representatives to contact me with updates and notifications via Email/SMS/What'sApp/Call. This will override DND/NDNC *
+                </label>
+                </div>
+                <br><br>
+                <button>APPLY NOW <span style='font-size:15px;'>&#10095;</span></button>
+                <br><br>
+                <p>Already have an Account? <a href="index.html">Login</a></p>
+                <br>
+                <p>Resend Verification Email</p>
+        </form>
+        </div>
+    </body>
+</html>
+```
 ## CSS Code:
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.bg-img {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-box {
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6); 
+  overflow-y: auto;
+  max-height: 90vh; 
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+select {
+  width: 49%;
+}
+
+label, p, h2 {
+  color: white;
+  font-size: 13px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.checkbox {
+  margin-top: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e28743;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+p{
+  text-align: center;
+}
+a{
+  color: white;
+}
+```
 ## Output:
+![image](https://github.com/user-attachments/assets/7b3ea0d7-412b-46e7-9c71-530c22380673)
 
 ## Result:
 A landing page clone of Saveetha Engineering College’s Admission Enquiry form using HTML and CSS is designed successfully.
